@@ -31,3 +31,6 @@ RewriteRule ^(.*)$ http://norayr.am/$1 [R=301,L]
 </IfModule>
 ```
 apparently.
+
+P. P. S.
+yes, data in script is fake. (: obviously.
