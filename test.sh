@@ -24,7 +24,7 @@ do
   file=`echo $i | awk -F "/" {' print $9 '}`
   nfile="${file%.*}"
   vfile="${nfile}1"
-  sfx=`ls $IMG_PATH/$year/$month/ | grep $nfile | grep -v $vfile | grep 300 | awk -F "." {' print $1 '} | awk -F "-" {' print $2 '}`
+  sfx=`ls $IMG_PATH/$year/$month/ | grep $nfile | grep -v $vfile | grep 300 | grep -v 150 | awk -F "." {' print $1 '} | awk -F "-" {' print $2 '}`
   str3='.jpg"/></a><br>'
   str5="-${sfx}${str3}"
   if [ "$i" != "guid" ]
